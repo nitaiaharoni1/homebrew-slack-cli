@@ -1,8 +1,8 @@
 # Homebrew formula for Slack CLI
-# This file should be placed in: homebrew-slack-cli/Formula/slack-cli.rb
-# Or in your tap: homebrew-slack-cli/slack-cli.rb
+# Formula name: cli
+# Tap: nitaiaharoni1/slack
 
-class SlackChat < Formula
+class Cli < Formula
   desc "Powerful command-line interface for Slack built with pure bash"
   homepage "https://github.com/nitaiaharoni1/slack-cli"
   url "https://github.com/nitaiaharoni1/slack-cli/archive/refs/tags/v1.3.0.tar.gz"
