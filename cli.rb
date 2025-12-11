@@ -5,8 +5,8 @@
 class Cli < Formula
   desc "Powerful command-line interface for Slack built with pure bash"
   homepage "https://github.com/nitaiaharoni1/slack-cli"
-  url "https://github.com/nitaiaharoni1/slack-cli/archive/refs/tags/v1.3.1.tar.gz"
-  sha256 "6199e74919b3db216d5f93bef8b0815d102c3fdfd465ccef519ac0dbd259b414"
+  url "https://github.com/nitaiaharoni1/slack-cli/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "a052fa5e9add669654163945119c315b356e38927c37a61519ea875d6e2f6d00"
   license "MIT"
   head "https://github.com/nitaiaharoni1/slack-cli.git", branch: "main"
 
@@ -25,13 +25,7 @@ class Cli < Formula
       Slack CLI has been installed!
 
       To get started:
-      1. Add to your shell config (~/.zshrc or ~/.bashrc):
-         source #{HOMEBREW_PREFIX}/bin/slack-chat
-      2. Reload your shell: source ~/.zshrc
-      3. Run setup: slack-chat init
-
-      Note: This installs as 'slack-chat' to coexist with official Slack CLI.
-      Use 'slack-chat' instead of 'slack' to avoid conflicts.
+      1. Run setup: slack-chat init
 
       The 'slack-chat init' command will guide you through:
       - Getting a Slack token
@@ -39,6 +33,9 @@ class Cli < Formula
       - Testing the connection
 
       Then use: slack-chat help
+
+      Note: This installs as 'slack-chat' to coexist with official Slack CLI.
+      No need to source in your shell config - it works as a standalone command!
     EOS
   end
 
