@@ -15,9 +15,9 @@ class SlackCli < Formula
   depends_on "python3"
 
   def install
-    bin.install "slack-cli.sh" => "slack"
+    bin.install "slack-cli.sh" => "slack-bash"
     # Make sure the script is executable
-    chmod 0755, bin/"slack"
+    chmod 0755, bin/"slack-bash"
   end
 
   def caveats
@@ -41,7 +41,7 @@ class SlackCli < Formula
 
   test do
     # Test that the script exists and is executable
-    assert_match "Slack CLI", shell_output("#{bin}/slack help 2>&1", 1)
+    assert_match "Slack CLI", shell_output("#{bin}/slack-bash help 2>&1", 1)
   end
 end
 
